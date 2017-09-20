@@ -1,4 +1,4 @@
- const webpack = require('webpack');
+const webpack = require('webpack');
 
  module.exports = {
  	entry: './ex.2/index.js',
@@ -9,5 +9,15 @@
  	devServer: {
  		port: 8080,
  		contentBase: './public'
+ 	},
+ 	module: {
+ 		loaders: [{
+ 			test: /.js?$/,
+ 			loader: 'babel-loader',
+ 			exclude: /node_modules/,
+ 			query: {
+ 				presets: ['es2015']
+ 			}
+ 		}]
  	}
  }
