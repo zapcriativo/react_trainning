@@ -1,7 +1,12 @@
 import React from 'react'
-import ReactDom from  'react-dom'
+import ReactDom from 'react-dom'
+import Padrao, {Primeiro, Segundo, Terceiro} from './component'
 
 ReactDom.render(
-	<h1>Olá React</h1>,document.getElementById('app')
-)                                                                     
-
+	<div>
+		<Padrao />
+		<Primeiro />
+		<Segundo />
+		<Terceiro />
+	</div>
+	, document.getElementById('app'))
