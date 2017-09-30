@@ -1,15 +1,9 @@
 import React from 'react'
 import ReactDom from 'react-dom'
-import Family from './Family'
-import Member from './member'
-import Pets from './pets'
+import ClassComponent from './classComponent'
+
+// aprendendo a trabalahr com classes
 
 ReactDom.render(
-	<Family>
-		<Member name='Alan' lastName='Ribeiro' />
-		<Member name='Andressa' lastName='Ribeiro' />
-		<Member name='Adrian' lastName='Ribeiro' />
-		<Pets name='Cachorro' raca='Vira Lata' />
-		<Pets name='Gato' raca='Vira Lata' />
-	</Family>
-	,document.getElementById('app'))
+<ClassComponent value="Aprendendo o uso de Classes" />
+,document.getElementById('app'))
