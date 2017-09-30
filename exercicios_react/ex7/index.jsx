@@ -5,5 +5,5 @@ import ClassComponent from './classComponent'
 // aprendendo a trabalahr com classes
 
 ReactDom.render(
-<ClassComponent label='Contador' initialValue={10} />
+<ClassComponent value="Aprendendo o uso de Classes" />
 ,document.getElementById('app'))
